@@ -16,4 +16,4 @@ spec:
         - name: avinashpullurusunbirdtelemetryservice 
           image: estacraks.azurecr.io/avinashpullurusunbirdtelemetryservice
           ports:
-          - containerPort: 80
+          - containerPort: 9001
