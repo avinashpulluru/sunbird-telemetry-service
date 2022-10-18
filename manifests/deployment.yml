@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: avinashpullurusunbirdtelemetryservice 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: avinashpullurusunbirdtelemetryservice
+  template:
+    metadata:
+      labels:
+        app: avinashpullurusunbirdtelemetryservice 
+    spec:
+      containers:
+        - name: avinashpullurusunbirdtelemetryservice 
+          image: estacrakspoc.azurecr.io/avinashpullurusunbirdtelemetryservice
+          ports:
+          - containerPort: 9001
